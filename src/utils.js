@@ -15,13 +15,13 @@ import * as d3 from 'd3';
  *
  * @params X     bandwidth used for computation
  * */
-const KernelDensityEstimator = (kernel, X) => {
-  return V => (
+const KernelDensityEstimator = (kernel, X) => (
+  V => (
     X.map(x => (
-        [x, d3.mean(V, v => (kernel(x - v)))]
+      [x, d3.mean(V, v => (kernel(x - v)))]
     ))
   )
-}
+);
 
 /**
  * Epanechnikov (parabolic)
@@ -30,11 +30,11 @@ const KernelDensityEstimator = (kernel, X) => {
  * Several types of kernel functions are commonly used:
  * uniform, triangle, Epanechnikov, quartic (biweight), tricube, triweight, Gaussian, quadratic and cosine.
  * */
-const EpanechnikovKernel = k => {
-  return v => (
+const EpanechnikovKernel = k => (
+  v => (
     Math.abs(v /= k) <= 1 ? 0.75 * (1 - v * v) / k : 0
   )
-}
+);
 
 // TODO
 /**
