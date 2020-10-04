@@ -1,0 +1,17 @@
+/**
+ * Created by Arie M. Prasetyo on 2019-08-30
+ */
+
+.AreaChart {
+	display: inline-block;
+}
+
+.AreaChart > svg .grid > :global(.domain) {
+  stroke-width: 0;
+}
+
+.AreaChart > svg .grid > :global(.tick) {
+	stroke: #385273;
+	stroke-opacity: 0.4;
+	shape-rendering: crispEdges;
+}

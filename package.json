@@ -1,0 +1,58 @@
+{
+  "name": "dataviz",
+  "version": "1.0.0",
+  "description": "d3 and react visualisation experiments",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && open build/index.html"
+  },
+  "keywords": [
+    "react",
+    "d3",
+    "data",
+    "visualisation"
+  ],
+  "author": "Arie M. Prasetyo",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "chroma-js": "^2.0.4",
+    "d3": "^5.11.0",
+    "lodash": "^4.17.15",
+    "react": "^16.8.6",
+    "react-css-modules": "^4.7.11",
+    "react-dom": "^16.8.6",
+    "react-syntax-highlighter": "^11.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-stateless-component-name": "^1.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-minify": "^0.5.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdom": "^15.1.1",
+    "jsdom-global": "^3.0.2",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}

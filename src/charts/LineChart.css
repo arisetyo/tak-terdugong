@@ -1,0 +1,21 @@
+/**
+ * Created by Arie M. Prasetyo on 2019-08-28
+ */
+
+.LineChart {
+	display: inline-block;
+}
+
+.LineChart > svg {
+	background: rgba(242, 200, 75, 0.1);
+}
+
+.LineChart > svg .grid > :global(.domain) {
+  stroke-width: 0;
+}
+
+.LineChart > svg .grid > :global(.tick) {
+	stroke: #385273;
+	stroke-opacity: 0.4;
+	shape-rendering: crispEdges;
+}

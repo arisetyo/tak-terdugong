@@ -1,0 +1,14 @@
+/**
+ * Created by Arie M. Prasetyo on 2019-06-28
+ */
+
+.SparkLine {
+	display: inline-block;
+	margin: 0 4px;
+}
+
+.SparkLine > svg {
+	background: #F2C84B;
+	stroke: #385273;
+	border-radius: 2px;
+}

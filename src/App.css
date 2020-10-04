@@ -1,0 +1,86 @@
+/**
+ * Copyright: 	UI/X : AMP (2019)
+ * Author: 			Arie M. Prasetyo
+ * Created:			2019-08-26
+ */
+
+.App {
+	flex: 1;
+	padding: 16px;
+	overflow-y: scroll;
+
+	font-family: 'PT Serif', serif;
+	font-size: 12px;	
+}
+
+.App > .description {
+	padding-bottom: 16px;
+}
+
+.App > .description > h1 {
+	font-family: 'DM Serif Display', serif;
+	padding-bottom: 16px;
+	color: #BF4904;
+}
+
+.App > h2 {
+	font-family: 'DM Serif Display', serif;
+	padding: 64px 0 16px;
+	color: #487334;
+}
+
+.App > h2 > a {
+	color: inherit;
+}
+
+.App > .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-row-gap: 8px;
+	grid-column-gap: 8px;
+}
+
+.App > .container > .chart,
+.App > .container > .chartWide {
+	padding: 8px;
+	border-radius: 2px;
+	box-shadow: 0 8px 4px silver;
+}
+
+.App > .container > .chartWide {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.App > .container > .chart > h3 {
+	font-family: 'DM Serif Display', serif;
+	color: #385273;
+}
+
+.App > .container > .chart > p {
+	margin: 8px 0;
+}
+
+.App svg text {
+	font-family: 'Roboto Mono', monospace;
+}
+
+/**
+ * Camp Fire Cooking - Catskills
+ * by Matthew Rudd
+ * color.adobe.com
+ * */
+
+/* Color Theme Swatches in Hex */
+.Camp-Fire-Cooking---Catskills-1-hex { color: #385273; } /* blue */
+.Camp-Fire-Cooking---Catskills-2-hex { color: #487334; } /* green */
+.Camp-Fire-Cooking---Catskills-3-hex { color: #F2C84B; } /* yellow */
+.Camp-Fire-Cooking---Catskills-4-hex { color: #F29A2E; } /* orange */
+.Camp-Fire-Cooking---Catskills-5-hex { color: #BF4904; } /* red */
+
+/* Color Theme Swatches in RGBA */
+.Camp-Fire-Cooking---Catskills-1-rgba { color: rgba(56, 82, 114, 1); } /* blue */
+.Camp-Fire-Cooking---Catskills-2-rgba { color: rgba(72, 114, 52, 1); } /* green */
+.Camp-Fire-Cooking---Catskills-3-rgba { color: rgba(242, 200, 75, 1); } /* yellow */
+.Camp-Fire-Cooking---Catskills-4-rgba { color: rgba(242, 154, 45, 1); } /* orange */
+.Camp-Fire-Cooking---Catskills-5-rgba { color: rgba(191, 73, 4, 1); } /* red */

@@ -1,0 +1,18 @@
+/**
+ * Created by Arie M. Prasetyo on 2020-01-19
+ */
+
+ .Donut {
+	display: inline-block;
+	margin: 0 4px;
+	position: relative;
+}
+
+.Donut > .text {
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	text-align: center;
+	font-family: 'Rubik', 'Courier New', Courier, monospace;
+	font-size: 1.3em;
+}

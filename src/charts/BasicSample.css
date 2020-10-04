@@ -1,0 +1,11 @@
+.BasicSample {
+	background-color: black;
+}
+
+.BasicSample > svg > path {
+	stroke: steelblue;
+	stroke-dasharray: 6 4;
+	fill: none;
+	stroke-width: 2px;
+	stroke-linecap: round;
+}
