@@ -62,7 +62,7 @@ export class Donut extends Component {
 		const {arcData, arcBgData, fillColor} = this.state;
 
 		return (
-			<div class={`${styles.Donut} ${className || ''}`}>
+			<div className={`${styles.Donut} ${className || ''}`}>
 
 				<svg xmlns="http://www.w3.org/2000/svg"
 					width={this.dim.w}
