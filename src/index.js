@@ -1,11 +1,11 @@
 /**
- * Copyright: 	UI/X : AMP (2019)
- * Author: 			Arie M. Prasetyo
- * Created:			2019-08-26
+ * Main app entry point
+ * @author Arie M. Prasetyo
+ * @copyright 2020
  */
 
-import React from 'react'
-import {render} from 'react-dom'
-import App from './App'
+import {Donut} from './charts';
 
-render(<App/>, document.getElementById('root'));
+export {
+	Donut
+};

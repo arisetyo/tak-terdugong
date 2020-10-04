@@ -6,10 +6,6 @@ Data-Viz components used by the Dugong framework.
 
 ## How-to
 
-__IMPORTANT__ Use these prior to using storybook: `npm run dev`
-
----
-
 * Install the required libraries, run `npm install`
 * Run the Storybook server, `node run storybook`
 
