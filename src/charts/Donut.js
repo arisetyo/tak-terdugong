@@ -30,6 +30,12 @@ export class Donut extends Component {
 		const {value} = this.props;
 		this.draw(value);
 	}
+
+	componentDidUpdate(prevProps) {
+		if (this.props.value !== prevProps.value) {
+			this.draw(this.props.value);
+		}
+	}
 	
 	draw(value) {
     let arcBg = d3.arc()
@@ -38,7 +44,7 @@ export class Donut extends Component {
     .startAngle(0)
     .endAngle(4 * (Math.PI / 2));
 
-    let arc = d3.arc()
+    let arcFg = d3.arc()
     .innerRadius(20)
     .outerRadius(30)
     .startAngle(0)
@@ -51,7 +57,7 @@ export class Donut extends Component {
 		else  fillColor = this.blue;
 		
 		this.setState({
-      arcData: arc(),
+      arcFgData: arcFg(),
 			arcBgData: arcBg(),
 			fillColor
     });
@@ -59,7 +65,7 @@ export class Donut extends Component {
 
 	render() {
 		const {className, textClassName, value} = this.props;
-		const {arcData, arcBgData, fillColor} = this.state;
+		const {arcFgData, arcBgData, fillColor} = this.state;
 
 		return (
 			<div className={`${styles.Donut} ${className || ''}`}>
@@ -74,7 +80,7 @@ export class Donut extends Component {
 							strokeWidth={0}
 						/>
             <path
-							d={arcData}
+							d={arcFgData}
               fill={fillColor}
 							strokeWidth={0}
 						/>
