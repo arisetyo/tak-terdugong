@@ -6,11 +6,11 @@
 :root {
 	--main-bg: #FEFEFE;
 	--main-fg: #333333;
-	--primary-accent: rgba(0, 20, 38, 1);
-	--alt-primary-accent: rgba(2, 82, 114, 1);
-	--secondary-accent: rgba(191, 155, 110, 1);
-	--alt-secondary-accent: rgba(191, 179, 164, 1);
-	--tertiary-accent: rgba(140, 98, 61, 1);
+	--primary: rgba(0, 20, 38, 1);
+	--alt-primary: rgba(2, 82, 114, 1);
+	--secondary: rgba(191, 155, 110, 1);
+	--alt-secondary: rgba(191, 179, 164, 1);
+	--tertiary: rgba(140, 98, 61, 1);
 }
 
 html {

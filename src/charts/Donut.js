@@ -4,6 +4,7 @@
 import React, {Component, Fragment} from 'react';
 import * as d3 from 'd3';
 import styles from './Donut.css';
+import {colorRed, colorYellow, colorGreen, colorBlue} from '../constants';
 
 export class Donut extends Component {
 	constructor(props) {
@@ -16,10 +17,12 @@ export class Donut extends Component {
 		};
 
 		// my color scheme
-		this.red = 'rgb(191, 73, 4)';
-		this.yellow = 'rgb(242, 200, 75)';
-		this.green = 'rgb(72, 115, 52)';
-		this.blue = 'rgb(56, 82, 115)';
+		this.low = `rgb(${colorRed})`;
+		this.midlow = `rgb(${colorYellow})`;
+		this.midhi = `rgb(${colorGreen})`;
+		this.hi = `rgb(${colorBlue})`;
+
+		this.pathColor = '204, 204, 204, 0.3';
 
 		this.state = {
 			lineData: null
@@ -51,10 +54,14 @@ export class Donut extends Component {
 		.endAngle((value * 4) * (Math.PI / 2));
 
 		let fillColor;
-		if (value < .5) fillColor = this.red;
-		else if (value < .7) fillColor = this.yellow;
-		else if (value < .8) fillColor = this.green;
-		else  fillColor = this.blue;
+		if (value < .5)
+			fillColor = this.low;
+		else if (value < .7)
+			fillColor = this.midlow;
+		else if (value < .8)
+			fillColor = this.midhi;
+		else
+			fillColor = this.hi;
 		
 		this.setState({
       arcFgData: arcFg(),
@@ -76,7 +83,7 @@ export class Donut extends Component {
 					<g transform={`translate(${this.dim.t})`}>
             <path
 							d={arcBgData}
-              fill={'rgba(204, 204, 204, 0.4)'}
+              fill={`rgba(${this.pathColor})`}
 							strokeWidth={0}
 						/>
             <path
